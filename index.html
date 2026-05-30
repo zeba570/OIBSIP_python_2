@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart BMI Tracker</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Smart BMI Tracker</h1>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter Name">
+
+            <input type="number"
+                   id="weight"
+                   placeholder="Weight in KG">
+
+            <input type="number"
+                   id="height"
+                   placeholder="Height in Meters">
+
+            <button onclick="calculateBMI()">
+                Calculate BMI
+            </button>
+
+            <button onclick="loadHistory()">
+                Show History
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+        <div class="history-card">
+
+            <h2>BMI Records</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Weight</th>
+                        <th>Height</th>
+                        <th>BMI</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="historyTable"></tbody>
+                <div class="graph-card">
+
+        <h2>BMI Trend Analysis</h2>
+
+        <canvas id="bmiChart"></canvas>
+
+    </div>
+
+    <div class="stats-card">
+
+        <h2>Statistical Analysis</h2>
+
+        <div id="stats"></div>
+
+    </div>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+
+<script src="stats.js"></script>
+
+</body>
+
+</html>
