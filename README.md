@@ -92,7 +92,7 @@ BMI_Tracker/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/zeba570/BMI_calculator.git
+git clone https://github.com/zeba570/OIBSIP_python_2.git
 ```
 
 ---
